@@ -1,0 +1,92 @@
+{
+  "appTitle": "ZnZn",
+  
+  "goBack": "Вернуться",
+  
+  "createPass": "Создать карту",
+  
+  "generalInfo": "Общая информация",
+  
+  "businessName": "Название бизнеса",
+  
+  "promoName": "Название акции",
+  
+  "location": "Местоположение",
+  
+  "next": "Далее",
+  
+  "ofPrep": "из",
+  
+  "expirationDate": "Срок действия",
+  
+  "itemSelectHint": "Выберите количество товара для получения награды",
+  
+  "max": "макс",
+  
+  "buy6": "Купить 6",
+  
+  "itemNamePlaceholder": "Кружек кофе",
+  
+  "toGetReward": "Для получения награды",
+  
+  "customization": "Добавить дизайн",
+  
+  "backgroundImage": "Фоновое изображение",
+  
+  "preview": "Предпросмотр",
+  
+  "cardPreview": "Предпросмотр карты",
+  
+  "getBackToChanges": "Вернуться к изменениям",
+  
+  "showMore": "Еще",
+  
+  "statistics": "Статистика",
+  
+  "favourites": "Избранное",
+  
+  "downloads": "Загрузки",
+  
+  "scans": "Сканирования",
+  
+  "myPasses": "Мои карты",
+  
+  "overall": "Всего",
+  
+  "step": "Шаг",
+  
+  "upload": "Загрузить",
+  
+  "passLogo": "Лого",
+  
+  "fileUpTo": "Файл до",
+  
+  "mb": "мб",
+
+  "getCard" : "Получить карту",
+
+  "cardInfo" : "Информация о карте",
+
+  "serialNumber" : "Серийный номер",
+  
+  "connectToBusiness" : "Подключитесь к бизнесу",
+
+  "verificationCodeMessage" : "Проверочный код должен быть предоставлен владельцем бизнеса сотрудникам. Это одноразовый 6-значный код.",
+  
+  "expirationMessageFirstPart" : "Срок действия кода истекает через",
+
+  "expirationMessageSecondPart" : "с момента создания",
+
+  "days" : "дней",
+
+  "addEmployee" : "Добавить сотрудника",
+ 
+  "generate" : "генерировать",
+
+  "findPlace": "Найдите место",
+  
+  "pickLocation": "Выбрать место"
+
+
+    
+  }

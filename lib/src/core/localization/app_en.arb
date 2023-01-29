@@ -1,0 +1,253 @@
+
+{
+  
+  "appTitle": "ZnZn",
+
+  "login": "Login",
+
+  "logout": "Logout",
+
+  "register": "Register",
+
+  "email": "Email",
+
+  "name": "Name",
+
+  "emailHint": "example@mail.com",
+
+  "password": "Password",
+
+  "passwordHint": "**********",
+
+  "forgotPassword": "Forgot Password?",
+
+  "restorePassword": "Restore Password",
+
+  "enterNewPass": "Enter New Password",
+
+  "confirmNewPass": "Confirm New Password",
+
+  "enterEmail": "Enter Your Email",
+
+  "enterAsBusiness": "Enter as Business",
+
+  "enterAsEmployee": "Enter as Employee",
+
+  "submit": "Submit",
+
+  "businessID": "Business ID",
+
+  "businessIDHint": "i.e. 1234-5fd7-asd9-as4d",
+
+  "createAccount": "Create Account",
+
+  "verify": "Verify",
+
+  "verifyCode": "Code Verification",
+
+  "enterCode": "Enter Verification Code",
+
+  "didntReceiveCode": "Didn't receive code?",
+
+  "cardBack": "Card Back",
+
+  "newPass": "New Password",
+
+  "codeIsNotValid": "Code is not valid",
+
+  "resend": "Resend",
+
+  "createEmployeeAccount": "Create Employee Account",
+
+  "iHaveBusinessID": "I have Business verification code",
+
+  "registerWith": "Register with",
+
+  "alreadyHaveAccount": "Already have an account?",
+
+  "needAccount": "Need an account?",
+
+  "rememberMe": "Remember me",
+
+  "firstName": "First Name",
+
+  "phone": "Phone",
+
+  "phoneHint": "+7 (999) 999-99-99",
+
+  "username": "Username",
+  
+  "usernameHint": "i.e. Sam Smith",
+
+  "goBack": "Go Back",
+
+  "createPass": "Create Pass",
+
+  "generalInfo": "General Information",
+  
+  "cardInfo": "Card Information",
+
+  "businessName": "Business Name",
+
+  "businessNameHint":"i.e. Happy Coffee",
+
+  "promoName": "Promo Name",
+
+  "location": "Location",
+
+  "locationHint": "i.e. 123 Main Street, New York, NY 10001",
+
+  "next": "Next",
+
+  "byDefault" : "By default",
+
+  "months": "Months",
+
+  "ofPrep": "of",
+
+  "expirationDate": "Expiration Date",
+
+  "ratio": "Ratio",
+
+  "typeItemName": "Type item name i.e.",
+
+  "itemSelectHint": "Select how many items are required for reward",
+
+  "itemName": "Item Name",
+
+  "rewards" :"Rewards",
+
+  "toNextReward": "To Next Reward",
+
+  "rewardsReceived": "Rewards received",
+
+  "max": "max",
+
+  "buy6": "buy 6",
+
+  "itemNamePlaceholder": "cups of coffee",
+
+  "toGetReward": "to get reward",
+
+  "customization": "Customization",
+
+  "backgroundImage": "Background Image",
+
+  "preview": "Preview",
+
+  "stamps": "Stamps",
+
+  "cardPreview": "Card Preview",
+
+  "backToSignIn": "Back to Sign In",
+
+  "getBackToChanges": "Back to Changes",
+
+  "showMore": "Show More",
+
+  "addIcon": "Add Icon",
+
+  "address": "Address",
+
+  "create": "Create",
+
+  "skip": "Skip",
+
+  "createBusiness": "Create Business",
+
+  "addressHint": "i.e. 123 Main Street, New York, NY 10001",
+
+  "statistics": "Statistics",
+
+  "favourites": "Favourites",
+
+  "downloads": "Downloads",
+
+  "scans": "Scans",
+
+  "sendCode": "Send Code",
+
+  "passes": "Passes",
+
+  "businesses": "Businesses",
+
+  "employees": "Employees",
+
+  "overall": "Overall",
+
+  "step": "Step",
+
+  "upload": "Upload",
+
+  "passLogo": "Pass Logo",
+
+  "fileUpTo": "File up to",
+
+  "mb": "mb",
+
+  "scanQr": "Scan QR",
+
+  "getRewardInfo": "Get Reward Card Info",
+
+  "scanner" : "Scanner",
+
+  "cancelScan" : "Cancel Scan",
+
+  "getCard" : "Get Card",
+
+  "serialNumber" : "Serial Number",
+
+  "done" : "Done",
+
+  "scanAgain" : "Scan again",
+
+  "today" : "Today",
+
+  "thisWeek" : "This Week",
+
+  "thisMonth" : "This Month",
+
+  "connectToBusiness" : "Connect to business",
+  
+  "verificationCodeMessage" : "Verification Code should be provided by the business owner to the employees. It is one time 6-digit code. ",
+
+  "expirationMessageFirstPart" : "Code will expire in",
+
+  "expirationMessageSecondPart" : "since generated",
+
+  "days" : "days",
+
+  "addEmployee" : "Add employee",
+
+  "generate" : "Generate",
+
+  "findPlace": "Find place",
+
+  "pickLocation": "Pick location", 
+
+  "search": "Search",
+
+  "settings": "Settings",
+
+  "edit": "Edit",
+
+  "save": "Save",
+
+  "delete": "Delete",
+
+  "deleteAccount": "Delete Account",
+
+  "general": "General",
+
+  "notifications": "Notifications",
+
+  "language": "Language", 
+
+  "fillAllFields": "Fill all the fields",
+
+  "account": "Account", 
+
+  "subscription": "Subscription"
+
+}
+

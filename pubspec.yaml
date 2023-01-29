@@ -1,0 +1,242 @@
+name: app_template
+description:  A Flutter App Template
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+# * Packages that will be in the final version of app
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # * Project Utilities
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  # Localization package
+  intl: ^0.17.0 
+  # Flavoring
+  flutter_flavorizr: ^2.1.5
+  # Icon Generator
+  flutter_launcher_icons: ^0.11.0
+  # Native Splash Screen
+  flutter_native_splash: ^2.2.15
+
+  
+  # * Navigation and routing
+  go_router: ^6.0.1
+
+  # * Data Management
+  # Local Data Storage
+  isar: ^3.0.5
+  isar_flutter_libs: ^3.0.5
+  # Drift ORM
+  drift: ^2.5.0
+  # Secure Storage for sensitive data
+  flutter_secure_storage: ^7.0.1
+  # Http client
+  dio: ^4.0.6
+  # JWT Token
+  jwt_decode: ^0.3.1
+  # Encryption
+  crypto: ^3.0.2
+  # Asset Generator
+  # flutter_gen: ^5.1.0+1
+
+
+  # * State Management
+  # Enhanced over provider library to manage state 
+  flutter_riverpod: ^2.1.1
+  # BLoC pattern
+  flutter_bloc: ^8.1.1
+
+
+  # * Utilities
+  # Tool for UI adaptability
+  flutter_screenutil: ^5.6.0
+  # Object Comparison 
+  equatable: ^2.0.5
+  # Image Picker from Gallery
+  image_picker: ^0.8.6
+  # Image Cropper
+  image_cropper: ^3.0.1
+  # Native File Picker
+  file_picker: ^5.2.5
+  # Text Formatter for input fields
+  flutter_multi_formatter: ^2.9.11
+  # Logging 
+  logger: ^1.1.0
+  # UUID Generator
+  uuid: ^3.0.4
+  # Connectivity Checker
+  connectivity_plus: ^3.0.2
+  # Functional Programming in Dart 
+  fpdart: ^0.4.0
+  # DotEnv for Flutter
+  flutter_dotenv: ^5.0.2
+  # Svg Images
+  flutter_svg: ^1.1.6
+  # URL Launcher
+  url_launcher: ^6.1.8
+  # Animations
+  animations: ^2.0.7
+  # Cache Images
+  cached_network_image: ^3.2.3
+  # Manage Permissions
+  permission_handler: ^10.2.0
+
+  # * Annotations
+  # Freezed
+  freezed_annotation: ^2.2.0
+  # JSON Serialization annotations
+  json_annotation: ^4.7.0
+
+  # * UI
+  # Cupertino Icons
+  cupertino_icons: ^1.0.2
+  # Google Fonts
+  google_fonts: ^3.0.1
+  # Shimmer loading effect
+  shimmer: ^2.0.0
+  # Adds dashed border to any widget
+  dotted_border: ^2.0.0+3
+  # Mask for widget
+  widget_mask: ^1.0.0+0
+  # Toast Notifications
+  fluttertoast: ^8.1.2
+  # Loading Indicators
+  flutter_spinkit: ^5.1.0
+  # Render Lottie Animations
+  lottie: ^2.2.0
+  # Render Rive Animations
+  rive: ^0.10.1
+  # Pull to Refresh
+  pull_to_refresh: ^2.0.0
+  # Onboarding Screens
+  introduction_screen: ^3.1.4
+  # Showcase app features
+  showcaseview: ^2.0.0+1
+  # Percentage Indicator
+  percent_indicator: ^4.2.2
+ 
+
+
+# * Packages that will not be in the final version of app
+dev_dependencies:
+  # * Testing 
+  # UI Preview for different devices
+  device_preview: ^1.1.0
+  # Unit Testing
+  flutter_test:
+    sdk: flutter
+  # Data Mocking
+  mockito: ^5.3.2
+  # Generate Fake Data
+  faker: ^2.0.0
+  
+  # * Linter and code organization
+  # Linter
+  flutter_lints: ^2.0.0
+  
+
+  # * Code Generators
+  # Generating Files 
+  build_runner: ^2.3.2
+  # Generating Serialization of JSON
+  json_serializable: ^6.5.4
+  # Factory based Code Generation
+  freezed: ^2.2.0
+  # Generator for local data storage
+  isar_generator: ^3.0.5
+  # Generating Asset Files
+  flutter_gen_runner: ^5.1.0+1
+
+
+flutter_icons:
+  image_path: "assets/icons/prod.png"
+  # Android Icon
+  android: true
+  adaptive_icon_background: "#1E1E1E"
+  # iOS Icon
+  ios: true
+  remove_alpha_ios: true
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/splash/
+    - lib/src/core/env/.env.development
+    - lib/src/core/env/.env.production
+    - lib/src/core/env/.env.staging
+
+# Flutter Splash Screen Generator Configurations
+flutter_native_splash:  
+  android: true
+  ios: true
+  color: "FFFFFF"
+  color_dark: "1E1E1E"
+  image: assets/splash/light.png
+  image_dark: assets/splash/dark.png
+  fullscreen: true
+  android_gravity: center
+  ios_gravity: center
+  android_12:
+    image: assets/splash/light.png
+    image_dark: assets/splash/dark.png
+    icon_background_color: "#121212"
+    icon_background_color_dark: "#121212"
+
+
+flavorizr: 
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+      customConfig:
+        minSdkVersion: 23
+    ios: 
+      buildSettings: {}
+  flavors:
+    dev:
+      app:
+        name: "Project Dev"
+        version: "1.0.0"
+        buildNumber: "1"
+        icon: "assets/icons/dev.png"
+      android:
+        applicationId: "kz.m-1o.project-dev"
+        flavorName: "Dev"
+      ios: 
+        bundleId: "kz.m-1o.project-dev"
+    
+    staging:
+      app:
+        name: "Project Staging"
+        version: "1.0.0"
+        buildNumber: "1"
+        icon: "assets/icons/stage.png"
+      android:
+        applicationId: "kz.m-1o.project-staging"
+        flavorName: "Staging"
+      ios: 
+        bundleId: "kz.m-1o.project-staging"
+
+    prod:
+      app:
+        name: "Project"
+        version: "1.0.0"
+        buildNumber: "1"
+        icon: "assets/icons/prod.png"
+      android:
+        applicationId: "kz.m-1o.project"
+        flavorName: "Prod"
+      ios: 
+        bundleId: "kz.m-1o.project"
+
+    
