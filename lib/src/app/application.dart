@@ -1,28 +1,24 @@
 import 'dart:async';
 
+import 'package:flutter_localizations/flutter_localizations.dart';
+
+import '../core/localization/l10n.dart';
+import '../core/localization/s.dart';
 import '../core/router/router_provider.dart';
+import '../core/theme/theme.dart';
 import 'imports.dart';
+
+part 'flavors.dart';
 
 class MainApp extends ConsumerWidget {
   const MainApp({
     required this.flavor,
+    required this.usesMaterialDesign,
     super.key,
   });
 
   final AppFlavor flavor;
-
-  MaterialApp _buildApp(AppFlavor flavor, GoRouter router) {
-    switch (flavor) {
-      case AppFlavor.development:
-        return development(router);
-      case AppFlavor.staging:
-        return staging(router);
-      case AppFlavor.production:
-        return production(router);
-      default:
-        return development(router);
-    }
-  }
+  final bool usesMaterialDesign;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

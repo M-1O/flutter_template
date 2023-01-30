@@ -6,5 +6,3 @@ export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:go_router/go_router.dart';
 
 export '../core/utils/helpers/ui_helpers.dart';
-export 'application.dart';
-export 'flavors.dart';

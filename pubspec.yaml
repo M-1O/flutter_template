@@ -181,7 +181,7 @@ flutter_native_splash:
   android: true
   ios: true
   color: "FFFFFF"
-  color_dark: "1E1E1E"
+  color_dark: "000000"
   image: assets/splash/light.png
   image_dark: assets/splash/dark.png
   fullscreen: true
@@ -190,8 +190,8 @@ flutter_native_splash:
   android_12:
     image: assets/splash/light.png
     image_dark: assets/splash/dark.png
-    icon_background_color: "#121212"
-    icon_background_color_dark: "#121212"
+    icon_background_color: "#000000"
+    icon_background_color_dark: "#000000"
 
 
 flavorizr: 

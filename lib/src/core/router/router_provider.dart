@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../features/settings/presentation/pages/settings.dart';
 import '../widgets/onboarding/onboarding.dart';
 import 'router_pages.dart';
 

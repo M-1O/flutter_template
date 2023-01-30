@@ -1,5 +1,7 @@
 import 'package:app_template/src/app/imports.dart';
 
+import '../core/widgets/layout/spacers.dart';
+
 class DefaultMainPage extends StatelessWidget {
   const DefaultMainPage({super.key});
 
@@ -16,6 +18,9 @@ class DefaultMainPage extends StatelessWidget {
             Text(
               'Default Main Page',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            SizedBox(
+              height: kHeight * 10,
             ),
             ElevatedButton(
               onPressed: () => context.go('/'),

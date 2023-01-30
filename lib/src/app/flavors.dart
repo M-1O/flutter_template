@@ -1,12 +1,19 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:go_router/go_router.dart';
-
-import '../core/localization/l10n.dart';
-import '../core/localization/s.dart';
-import '../core/theme/theme.dart';
+part of 'application.dart';
 
 enum AppFlavor { development, staging, production }
+
+MaterialApp _buildApp(AppFlavor flavor, GoRouter router) {
+  switch (flavor) {
+    case AppFlavor.development:
+      return development(router);
+    case AppFlavor.staging:
+      return staging(router);
+    case AppFlavor.production:
+      return production(router);
+    default:
+      return development(router);
+  }
+}
 
 MaterialApp development(GoRouter router) => MaterialApp.router(
       title: AppFlavor.development.toString(),
@@ -25,7 +32,7 @@ MaterialApp development(GoRouter router) => MaterialApp.router(
       routeInformationProvider: router.routeInformationProvider,
 
       // Theme
-      theme: AppTheme.appThemeLight,
+      theme: AppTheme.appTheme,
       darkTheme: AppTheme.appThemeDark,
       themeMode: ThemeMode.dark,
 
@@ -50,7 +57,7 @@ MaterialApp staging(GoRouter router) => MaterialApp.router(
       routeInformationProvider: router.routeInformationProvider,
 
       // Theme
-      theme: AppTheme.appThemeLight,
+      theme: AppTheme.appTheme,
       darkTheme: AppTheme.appThemeDark,
       themeMode: ThemeMode.dark,
 
@@ -75,7 +82,7 @@ MaterialApp production(GoRouter router) => MaterialApp.router(
       routeInformationProvider: router.routeInformationProvider,
 
       // Theme
-      theme: AppTheme.appThemeLight,
+      theme: AppTheme.appTheme,
       darkTheme: AppTheme.appThemeDark,
       themeMode: ThemeMode.dark,
 

@@ -1,4 +1,7 @@
+import 'package:app_template/src/app/application.dart';
+
 import 'src/app/imports.dart';
+
 void main() async {
   // await dotenv.load(fileName: 'assets/env/development.env');
   // Widget tree binding
@@ -17,6 +20,7 @@ void main() async {
         const ProviderScope(
           child: MainApp(
             flavor: AppFlavor.production,
+            usesMaterialDesign: true,
           ),
         ),
       );

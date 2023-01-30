@@ -1,3 +1,5 @@
+import 'package:app_template/src/app/application.dart';
+
 import 'src/app/imports.dart';
 
 void main() async {
@@ -19,6 +21,7 @@ void main() async {
         const ProviderScope(
           child: MainApp(
             flavor: AppFlavor.staging,
+            usesMaterialDesign: true,
           ),
         ),
       );
