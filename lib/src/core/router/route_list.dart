@@ -4,12 +4,12 @@ List<GoRoute> _routes = [
   GoRoute(
     name: RouteNames.onboarding,
     path: RoutePaths.onboarding,
-    // pageBuilder: (context, state) => OnboardingPage(),
+    builder: (context, state) => Onboarding(),
   ),
   GoRoute(
     name: RouteNames.main,
     path: RoutePaths.main,
-    // pageBuilder: (context, state) => MainPage(),
+    builder: (context, state) => const DefaultMainPage(),
     routes: [
       GoRoute(
         name: RouteNames.settings,

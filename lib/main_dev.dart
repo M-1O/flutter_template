@@ -1,4 +1,4 @@
-import 'src/app/main_export.dart';
+import 'src/app/imports.dart';
 
 void main() async {
   // await dotenv.load(fileName: 'assets/env/development.env');

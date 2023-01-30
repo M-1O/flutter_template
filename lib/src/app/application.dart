@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import '../core/router/router_provider.dart';
-import 'main_export.dart';
+import 'imports.dart';
 
 class MainApp extends ConsumerWidget {
   const MainApp({
