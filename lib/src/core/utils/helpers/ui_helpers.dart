@@ -3,8 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../theme/theme.dart';
-
 class UIHelpers {
   static void statusBarTheme() {
     if (Platform.isIOS) {
@@ -14,14 +12,26 @@ class UIHelpers {
       SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle.light.copyWith(statusBarColor: Colors.white),
       );
-    } else {
+    } else if (Platform.isMacOS) {
       SystemChrome.setSystemUIOverlayStyle(
-        SystemUiOverlayStyle(
-            statusBarColor: AppTheme.appThemeDark.backgroundColor),
+        const SystemUiOverlayStyle(statusBarColor: Colors.white),
       );
       SystemChrome.setSystemUIOverlayStyle(
-        SystemUiOverlayStyle.light
-            .copyWith(statusBarColor: AppTheme.appThemeDark.backgroundColor),
+        SystemUiOverlayStyle.light.copyWith(statusBarColor: Colors.white),
+      );
+    } else if (Platform.isAndroid) {
+      SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(statusBarColor: Colors.white),
+      );
+      SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle.light.copyWith(statusBarColor: Colors.white),
+      );
+    } else {
+      SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(statusBarColor: Colors.white),
+      );
+      SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle.light.copyWith(statusBarColor: Colors.white),
       );
     }
   }
