@@ -20,7 +20,6 @@ void main() async {
         const ProviderScope(
           child: MainApp(
             flavor: AppFlavor.production,
-            usesMaterialDesign: true,
           ),
         ),
       );

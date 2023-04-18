@@ -21,7 +21,6 @@ void main() async {
         const ProviderScope(
           child: MainApp(
             flavor: AppFlavor.staging,
-            usesMaterialDesign: true,
           ),
         ),
       );

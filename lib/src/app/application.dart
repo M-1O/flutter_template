@@ -8,17 +8,15 @@ import '../core/router/router_provider.dart';
 import '../core/theme/theme.dart';
 import 'imports.dart';
 
-part 'flavors.dart';
+part 'flavor_builds.dart';
 
 class MainApp extends ConsumerWidget {
   const MainApp({
     required this.flavor,
-    required this.usesMaterialDesign,
     super.key,
   });
 
   final AppFlavor flavor;
-  final bool usesMaterialDesign;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

@@ -37,5 +37,13 @@
             "args": ["-t","lib/main_dev.dart","--flavor", "dev"],
             "program": "lib/main_dev.dart"
         },
+        {
+            "name": "dev",
+            "type": "dart",
+            "request": "launch",
+            "args": ["-t","lib/main_dev.dart","--flavor", "dev"],
+            "program": "lib/main_dev.dart"
+        },
+
     ],
 }

@@ -21,7 +21,7 @@ void main() async {
         const ProviderScope(
           child: MainApp(
             flavor: AppFlavor.development,
-            usesMaterialDesign: true,
+
           ),
         ),
       );
