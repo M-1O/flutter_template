@@ -8,6 +8,7 @@ import '../secure/secure_storage_config.dart';
 part 'dio_config.dart';
 part 'dio_interceptor.dart';
 
+// TODO: Move to DI and Create a service with Factory
 class DioClient {
   static final DioClient _singleton = DioClient._internal();
 
