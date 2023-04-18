@@ -10,6 +10,7 @@ import '../widgets/onboarding/onboarding.dart';
 import 'router_pages.dart';
 
 part 'route_list.dart';
+part 'route_transitions.dart';
 part 'router_names.dart';
 part 'router_paths.dart';
 
