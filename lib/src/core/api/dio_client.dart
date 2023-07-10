@@ -28,8 +28,8 @@ class DioClient {
   init() async {
     BaseOptions options = BaseOptions(
       baseUrl: EnvironmentConfig.API_HOST,
-      connectTimeout: DioConfigurations.connectTimeout,
-      receiveTimeout: DioConfigurations.receiveTimeout,
+      // connectTimeout: DioConfigurations.connectTimeout,
+      // receiveTimeout: DioConfigurations.receiveTimeout,
     );
     _dio.options = options;
     _dio.interceptors.add(DioInterceptor());

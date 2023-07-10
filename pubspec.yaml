@@ -2,62 +2,57 @@
 # Github: m-1o
 
 name: app_template
-description:  A Flutter App Template
+description:  Drone Searcher and Aiming Desktop App
 publish_to: 'none' 
 
 version: 1.0.0+1
 
+isar_version: 3.0.5
+
 environment:
   sdk: ">=2.17.0 <3.0.0"
 
-# * Application Packages and Libraries
-
-
+# * Packages that will be in the final version of app
 dependencies:
   flutter:
     sdk: flutter
-
 
   # * Project Utilities
   # Localization
   flutter_localizations:
     sdk: flutter
   # Localization package
-  intl: ^0.17.0
+  intl: ^0.18.0 
   # Flavoring
   flutter_flavorizr: ^2.1.5
   # Icon Generator
-  flutter_launcher_icons: ^0.13.0
+  flutter_launcher_icons: ^0.11.0
   # Native Splash Screen
-  flutter_native_splash: ^2.2.15
+  # flutter_native_splash: ^2.2.15
+ 
 
   
   # * Navigation and routing
-  # Main Router
   go_router: ^6.0.1
-  # URL Launcher
-  url_launcher: ^6.1.8
-
-
   # * Data Management
   # Local Data Storage
-  isar: ^3.0.5
-  isar_flutter_libs: ^3.0.5
-  # Drift ORM
-  drift: ^2.5.0
-  # Secure Storage for sensitive data
+  isar: 3.1.0+1
+  isar_flutter_libs: 3.1.0+1 # contains the binaries
   flutter_secure_storage: ^8.0.0
-
-
-  # * Network and API
+  # Key Value Storage
+  shared_preferences: ^2.1.0
   # Http client
-  dio: ^5.1.1
+  dio: ^4.0.6
   # JWT Token
   jwt_decode: ^0.3.1
   # Encryption
   crypto: ^3.0.2
-  # Protocol Buffers
-  protobuf: ^2.1.0
+  # UDP Socket
+  udp: ^5.0.3
+  # Queue of the Futures
+  queue: ^3.1.0+2
+  # Asset Generator
+  # flutter_gen: ^5.1.0+1
 
 
   # * State Management
@@ -65,70 +60,57 @@ dependencies:
   flutter_riverpod: ^2.1.1
   # BLoC pattern
   flutter_bloc: ^8.1.1
-  # Reactive Programming
+
+  # * RxDart
+  # RxDart for notiifications
   rxdart: ^0.27.7
 
 
-  # * Dependency Injection
-  # Dependency Injection 
-  injectable: ^2.1.1
-  # Service Locator
-  get_it: ^7.2.0
-
-
-  # * File and Path Management
-  # File Picker
-  file_picker: ^5.2.5
-
-
-  # * General Utilities
+  # * Utilities
+  # Tool for UI adaptability
+  flutter_screenutil: ^5.8.4
   # Object Comparison 
   equatable: ^2.0.5
-   # UUID Generator
-  uuid: ^3.0.4
-  # Connectivity Checker
-  connectivity_plus: ^3.0.2
-  # Svg Images
-  flutter_svg: ^2.0.5
-  # Manage Permissions
-  permission_handler: ^10.2.0
-  # ??? Notifications 
-  awesome_notifications: ^0.7.4+1
-
-  # * Feature Utilities
-  # ??? Audio Waveform Visualization
-  flutter_audio_waveforms: ^1.2.1+8
-  # ??? Audio Player
-  audioplayers: ^4.0.1
-  # ??? Tables
-  pluto_grid: ^5.4.9
-  # Map with Tile Layers
-  flutter_map: ^3.1.0
-
-
-  # * UI Utilities
-  # Tool for UI adaptability
-  flutter_screenutil: ^5.6.0
-  # Tool for responsive UI
-  responsive_framework: ^1.0.0
-  # Animations
-  animations: ^2.0.7
-  
-  
-  # * Development Utilities
-  # Logging 
-  logger: ^1.1.0
-  # DotEnv for Flutter
-  flutter_dotenv: ^5.0.2
-  # Crash Reporting
-  sentry_flutter: ^7.4.2
-  # Asset Generator
-  # flutter_gen: ^5.1.0+1
-
-
-  # * Formatting Utilities
+  # Image Picker from Gallery
+  image_picker: ^0.8.6
+  # Image Cropper
+  image_cropper: ^3.0.1
+  # Native File Picker
+  file_picker: ^5.2.5
   # Text Formatter for input fields
   flutter_multi_formatter: ^2.9.11
+  # Logging 
+  logger: ^1.1.0
+  # UUID Generator
+  uuid: ^3.0.4
+  # Functional Programming in Dart 
+  fpdart: ^0.4.0
+  # DotEnv for Flutter
+  flutter_dotenv: ^5.0.2
+  # Svg Images
+  flutter_svg: ^1.1.6
+  # URL Launcher
+  url_launcher: ^6.1.8
+  # Animations
+  animations: ^2.0.7
+  # Cache Images
+  cached_network_image: ^3.2.3
+  # Service Locator
+  get_it: ^7.2.0
+  # Map
+  flutter_map: ^4.0.0
+  # Map Tile Caching
+  flutter_map_tile_caching: ^8.0.0
+  # Map Utility
+  latlong2: ^0.8.1
+  # Map Polyline
+  flutter_polyline_points: ^1.0.0
+  # Stream Transformer
+  stream_transform: ^2.1.0
+  # Path Provider
+  path_provider: ^2.0.14
+  # File System
+  archive: ^3.3.7
 
 
   # * Annotations
@@ -137,47 +119,46 @@ dependencies:
   # JSON Serialization annotations
   json_annotation: ^4.7.0
 
-
-  # * UI Libraries
-  # Microsoft Fluent UI
-  fluent_ui: ^4.5.0
-  # Fluent UI Icons
-  fluentui_system_icons: ^1.1.199
+  # * UI
   # Cupertino Icons
   cupertino_icons: ^1.0.2
   # Google Fonts
-  google_fonts: ^4.0.3
+  google_fonts: ^4.0.4
   # Shimmer loading effect
   shimmer: ^2.0.0
+  # Adds dashed border to any widget
+  dotted_border: ^2.0.0+3
   # Loading Indicators
   flutter_spinkit: ^5.1.0
+  # Render Lottie Animations
+  lottie: ^2.2.0
   # Onboarding Screens
   introduction_screen: ^3.1.4
   # Showcase app features
   showcaseview: ^2.0.0+1
   # Percentage Indicator
   percent_indicator: ^4.2.2
+  dart_vlc: ^0.4.0
+
+  # Staggered Grid View
+  flutter_staggered_grid_view: ^0.6.2
+  
 
 
-# * Packages that will not be in the release version of app
 
+dependency_overrides: 
+
+
+# * Packages that will not be in the final version of app
 dev_dependencies:
   # * Testing 
-  # Flutter Testing Framework
+  # Unit Testing
   flutter_test:
     sdk: flutter
-  # BLoC Testing
-  bloc_test: ^9.1.1
   # Data Mocking
-  mockito: ^5.3.2
+  mockito: ^5.4.1
   # Generate Fake Data
   faker: ^2.0.0
-
-
-  # * UI Testing 
-  # Preview for different devices
-  device_preview: ^1.1.0
-  
   
   # * Linter and code organization
   # Linter
@@ -189,45 +170,49 @@ dev_dependencies:
   build_runner: ^2.3.2
   # Generating Serialization of JSON
   json_serializable: ^6.5.4
-  # Code Generation for Models and Union Types
+  # Factory based Code Generation
   freezed: ^2.2.0
-  # Generator for local data storage
-  isar_generator: ^3.0.5
   # Generating Asset Files
   flutter_gen_runner: ^5.1.0+1
-  # Injecting Dependencies
-  injectable_generator: ^2.1.1
+  # Isar Code Generator
+  isar_generator: ^3.1.0
 
-flutter:
-  generate: true
-  uses-material-design: true
-
-  assets:
-    - assets/icons/
-    - assets/images/
-    - assets/splash/
-    - lib/src/core/env/.env.development
-    - lib/src/core/env/.env.production
-    - lib/src/core/env/.env.staging
-
-
-# * Flutter Icon Generator Configurations
 
 flutter_icons:
-  image_path: "assets/icons/prod.png"
+  image_path: "assets/app_icons/prod.png"
   # Android Icon
   android: true
   adaptive_icon_background: "#1E1E1E"
   # iOS Icon
   ios: true
   remove_alpha_ios: true
+  windows:
+    generate: true
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+  linux:
+    generate: true
+    icon_size: 48 # min:48, max:256, default: 48
 
+flutter:
+  generate: true
+  uses-material-design: true
 
-# * Flutter Splash Screen Generator Configurations
+  # assets:
+  #   - assets/icons/
+  #   - assets/splash/
+  #   - assets/app_icons/
+  #   - assets/map/
+    # - lib/src/core/env/.env.development
+    # - lib/src/core/env/.env.production
+    # - lib/src/core/env/.env.staging
 
+# Flutter Splash Screen Generator Configurations
 flutter_native_splash:  
   android: true
   ios: true
+  macos: true
   color: "FFFFFF"
   color_dark: "000000"
   image: assets/splash/light.png
@@ -240,53 +225,3 @@ flutter_native_splash:
     image_dark: assets/splash/dark.png
     icon_background_color: "#000000"
     icon_background_color_dark: "#000000"
-
-
-# * Flutter Flavor Configurations
-
-flavorizr: 
-  app:
-    android:
-      flavorDimensions: "flavor-type"
-      customConfig:
-        minSdkVersion: 23
-    ios: 
-      buildSettings: {}
-  flavors:
-    dev:
-      app:
-        name: "Project Dev"
-        version: "1.0.0"
-        buildNumber: "1"
-        icon: "assets/icons/dev.png"
-      android:
-        applicationId: "kz.cleverest.project-dev"
-        flavorName: "Dev"
-      ios: 
-        bundleId: "kz.cleverest.project-dev"
-    
-    staging:
-      app:
-        name: "Project Staging"
-        version: "1.0.0"
-        buildNumber: "1"
-        icon: "assets/icons/stage.png"
-      android:
-        applicationId: "kz.cleverest.project-staging"
-        flavorName: "Staging"
-      ios: 
-        bundleId: "kz.cleverest.project-staging"
-
-    prod:
-      app:
-        name: "Project"
-        version: "1.0.0"
-        buildNumber: "1"
-        icon: "assets/icons/prod.png"
-      android:
-        applicationId: "kz.cleverest.project"
-        flavorName: "Prod"
-      ios: 
-        bundleId: "kz.cleverest.project"
-
-    
