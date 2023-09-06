@@ -3,8 +3,6 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
-  audioplayers_linux
-  awesome_notifications
   flutter_secure_storage_linux
   isar_flutter_libs
   sentry_flutter

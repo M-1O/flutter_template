@@ -11,12 +11,12 @@ import 'router_pages.dart';
 
 part 'route_list.dart';
 part 'route_transitions.dart';
-part 'router_names.dart';
-part 'router_paths.dart';
+part 'routes.dart';
+
 
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
-    initialLocation: RoutePaths.main,
+    initialLocation: AppRoutes.main.path,
     redirect: ref.watch(routerServiceProvider).redirectLogic,
     debugLogDiagnostics: true,
     errorBuilder: (context, state) {
@@ -49,6 +49,6 @@ class RouterProvider extends StateNotifier {
 
   FutureOr<String?> redirectLogic(
       BuildContext context, GoRouterState state) async {
-    return RoutePaths.main;
+    return AppRoutes.main.name;
   }
 }

@@ -5,18 +5,18 @@ const _fadeTransitionEnd = 1.0;
 
 List<GoRoute> _routes = [
   GoRoute(
-    name: RouteNames.onboarding,
-    path: RoutePaths.onboarding,
+    name: AppRoutes.onboarding.name,
+    path: AppRoutes.onboarding.path,
     builder: (context, state) => const Onboarding(),
   ),
   GoRoute(
-    name: RouteNames.main,
-    path: RoutePaths.main,
+    name: AppRoutes.main.name,
+    path: AppRoutes.main.path,
     builder: (context, state) => const DefaultMainPage(),
     routes: [
       GoRoute(
-        path: RoutePaths.settings,
-        name: RouteNames.settings,
+        name: AppRoutes.settings.name,
+        path: AppRoutes.settings.path,
         pageBuilder: (context, state) => PageTransition.fade(
           context: context,
           state: state,
@@ -50,8 +50,8 @@ List<GoRoute> _routes = [
 //         ),
 //         routes: [
 //           GoRoute(
-//             path: RoutePaths.onboardVideo,
-//             name: RouteNames.onboardVideo,
+//             path: AppRoutes.onboardVideo,
+//             name: AppRoutes.onboardVideo,
 //             pageBuilder: (context, state) => buildPageWithFadeTransition(
 //               context: context,
 //               state: state,
@@ -61,8 +61,8 @@ List<GoRoute> _routes = [
 //             ),
 //           ),
 //           GoRoute(
-//             path: RoutePaths.missionControl,
-//             name: RouteNames.missionControl,
+//             path: AppRoutes.missionControl,
+//             name: AppRoutes.missionControl,
 //             pageBuilder: (context, state) => buildPageWithFadeTransition(
 //               context: context,
 //               state: state,
@@ -74,8 +74,8 @@ List<GoRoute> _routes = [
 //             ),
 //           ),
 //           GoRoute(
-//             path: RoutePaths.settings,
-//             name: RouteNames.settings,
+//             path: AppRoutes.settings,
+//             name: AppRoutes.settings,
 //             pageBuilder: (context, state) => buildPageWithFadeTransition(
 //               context: context,
 //               state: state,

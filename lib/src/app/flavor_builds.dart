@@ -24,7 +24,7 @@ MaterialApp development(GoRouter router) => MaterialApp.router(
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: L10n.all,
+      supportedLocales: S.delegate.supportedLocales,
 
       // Router
       routerDelegate: router.routerDelegate,
@@ -49,7 +49,7 @@ MaterialApp staging(GoRouter router) => MaterialApp.router(
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: L10n.all,
+      supportedLocales: S.delegate.supportedLocales,
 
       // Router
       routerDelegate: router.routerDelegate,
@@ -74,7 +74,7 @@ MaterialApp production(GoRouter router) => MaterialApp.router(
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: L10n.all,
+      supportedLocales: S.delegate.supportedLocales,
 
       // Router
       routerDelegate: router.routerDelegate,

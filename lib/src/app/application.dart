@@ -2,8 +2,7 @@ import 'dart:async';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import '../core/localization/l10n.dart';
-import '../core/localization/s.dart';
+import '../core/localization/generated/l10n.dart';
 import '../core/router/router_provider.dart';
 import '../core/theme/theme.dart';
 import 'imports.dart';

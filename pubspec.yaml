@@ -1,17 +1,19 @@
-# Mukhamejan Omar - 2023
 # Github: m-1o
 
 name: app_template
 description:  A Flutter App Template
 publish_to: 'none' 
 
-version: 1.0.0+1
+version: 0.0.1+1
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ^3.0.0
 
 # * Application Packages and Libraries
 
+# * Flutter Packages overrides for conflict resolution
+dependency_overrides:
+  intl: ^0.18.1
 
 dependencies:
   flutter:
@@ -23,7 +25,8 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   # Localization package
-  intl: ^0.17.0
+  intl: ^0.18.1
+  intl_utils: ^2.8.1
   # Flavoring
   flutter_flavorizr: ^2.1.5
   # Icon Generator
@@ -54,10 +57,10 @@ dependencies:
   dio: ^5.1.1
   # JWT Token
   jwt_decode: ^0.3.1
-  # Encryption
-  crypto: ^3.0.2
-  # Protocol Buffers
-  protobuf: ^2.1.0
+  # # Encryption
+  # crypto: ^3.0.2
+  # # Protocol Buffers
+  # protobuf: ^2.1.0
 
 
   # * State Management
@@ -93,15 +96,9 @@ dependencies:
   # Manage Permissions
   permission_handler: ^10.2.0
   # ??? Notifications 
-  awesome_notifications: ^0.7.4+1
+  # awesome_notifications: ^0.7.4+1
 
   # * Feature Utilities
-  # ??? Audio Waveform Visualization
-  flutter_audio_waveforms: ^1.2.1+8
-  # ??? Audio Player
-  audioplayers: ^4.0.1
-  # ??? Tables
-  pluto_grid: ^5.4.9
   # Map with Tile Layers
   flutter_map: ^3.1.0
 
@@ -123,7 +120,7 @@ dependencies:
   # Crash Reporting
   sentry_flutter: ^7.4.2
   # Asset Generator
-  # flutter_gen: ^5.1.0+1
+  flutter_gen: ^5.1.0+1
 
 
   # * Formatting Utilities
@@ -186,7 +183,7 @@ dev_dependencies:
 
   # * Code Generators
   # Generating Files 
-  build_runner: ^2.3.2
+  build_runner: ^2.4.6
   # Generating Serialization of JSON
   json_serializable: ^6.5.4
   # Code Generation for Models and Union Types
@@ -199,7 +196,6 @@ dev_dependencies:
   injectable_generator: ^2.1.1
 
 flutter:
-  generate: true
   uses-material-design: true
 
   assets:
@@ -209,6 +205,14 @@ flutter:
     - lib/src/core/env/.env.development
     - lib/src/core/env/.env.production
     - lib/src/core/env/.env.staging
+
+
+# * Localizations generating config
+flutter_intl:
+  enabled: true
+  arb_dir: lib/src/core/localization/l10n
+  output_dir: lib/src/core/localization/generated
+
 
 
 # * Flutter Icon Generator Configurations
@@ -260,10 +264,10 @@ flavorizr:
         buildNumber: "1"
         icon: "assets/icons/dev.png"
       android:
-        applicationId: "kz.cleverest.project-dev"
+        applicationId: "kz.m-1o.project-dev"
         flavorName: "Dev"
       ios: 
-        bundleId: "kz.cleverest.project-dev"
+        bundleId: "kz.m-1o.project-dev"
     
     staging:
       app:
@@ -272,10 +276,10 @@ flavorizr:
         buildNumber: "1"
         icon: "assets/icons/stage.png"
       android:
-        applicationId: "kz.cleverest.project-staging"
+        applicationId: "kz.m-1o.project-staging"
         flavorName: "Staging"
       ios: 
-        bundleId: "kz.cleverest.project-staging"
+        bundleId: "kz.m-1o.project-staging"
 
     prod:
       app:
@@ -284,9 +288,9 @@ flavorizr:
         buildNumber: "1"
         icon: "assets/icons/prod.png"
       android:
-        applicationId: "kz.cleverest.project"
+        applicationId: "kz.m-1o.project"
         flavorName: "Prod"
       ios: 
-        bundleId: "kz.cleverest.project"
+        bundleId: "kz.m-1o.project"
 
     
